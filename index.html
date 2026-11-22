@@ -170,7 +170,7 @@
         </div>
       </a>
 
-      <!-- Center: Distinct Section Navigation Links (Home, Stories, Interactive Lab, Family Picks, About Us, Contact Us) -->
+      <!-- Center: Distinct Section Navigation Links -->
       <nav class="hidden lg:flex items-center gap-1 text-xs xl:text-sm font-semibold" aria-label="Primary Navigation">
         <a href="#top" data-section="top" class="nav-pill px-3 py-2 rounded-full bg-amber-500/15 border border-amber-400/50 text-amber-300 shadow-inner transition-all whitespace-nowrap" data-i18n="nav_home">
           Home
@@ -194,7 +194,6 @@
 
       <!-- Right Controls: EN -> हिंदी Switcher + SUBSCRIBE (@jumbikostudio) CTA + Mobile Menu Button -->
       <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
-        <!-- Clear EN -> हिंदी Language Switcher -->
         <button id="lang-toggle" type="button" aria-pressed="false" aria-label="Switch language between English and Hindi"
           title="Switch language: EN -> हिंदी"
           class="inline-flex items-center gap-1.5 bg-[#1B1510] hover:bg-[#261D16] border border-amber-400/45 hover:border-amber-300 rounded-full p-1 text-xs font-bold transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
@@ -207,7 +206,6 @@
           </span>
         </button>
 
-        <!-- Crisp Red-and-Gold SUBSCRIBE Pill Button -->
         <a href="https://www.youtube.com/channel/UCoj-qDPvgTzuWUjxRereulw?sub_confirmation=1"
            target="_blank" rel="noopener noreferrer"
            aria-label="Subscribe to Jumbiko Studio on YouTube (@jumbikostudio)"
@@ -219,7 +217,6 @@
           </span>
         </a>
 
-        <!-- Mobile Menu Button -->
         <button id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer"
           class="lg:hidden p-2.5 rounded-xl bg-[#1B1510] text-amber-300 hover:bg-[#281F18] border border-amber-500/35 transition-colors cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
           <svg id="hamburger-icon" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
@@ -275,12 +272,10 @@
   <!-- Main Content Container -->
   <main id="top" class="max-w-7xl mx-auto px-4 sm:px-6 pt-5 pb-14 space-y-8 sm:space-y-10">
 
-    <!-- 1. Widescreen Hero Channel Banner Stage (Zero text overlaid on banner artwork) -->
+    <!-- 1. Widescreen Hero Channel Banner Stage -->
     <section aria-label="Jumbiko Studio Official Banner" class="relative rounded-3xl overflow-hidden gold-frame-strong bg-[#0D0A08] shadow-cinema">
-      <!-- Top Filmstrip Accent Bar -->
       <div class="h-1.5 w-full filmstrip-edge opacity-80" aria-hidden="true"></div>
 
-      <!-- Clean Unobstructed Banner Artwork Stage -->
       <div class="relative w-full aspect-[16/9] sm:aspect-[21/7] min-h-[168px] max-h-[360px] bg-black flex items-center justify-center overflow-hidden">
         <img
           src="jumbiko_studio_youtube_banner_2048x1152.jpg"
@@ -289,7 +284,6 @@
           onerror="this.style.display='none'; document.getElementById('banner-fallback').classList.remove('hidden');"
         />
 
-        <!-- Crisp Embedded SVG Banner Artwork Fallback when external image file isn't co-located -->
         <div id="banner-fallback" class="hidden w-full h-full">
           <svg class="w-full h-full" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jumbiko Studio cinematic gold and crimson banner illustration">
             <defs>
@@ -316,7 +310,6 @@
             <rect width="1440" height="420" fill="url(#bgCinema)"/>
             <polygon points="0,0 380,0 160,420 0,420" fill="url(#goldBeam)"/>
             <polygon points="1440,0 1060,0 1280,420 1440,420" fill="url(#crimsonBeam)"/>
-            <!-- Decorative Film Reel & Clapper Silhouette Left -->
             <g transform="translate(175, 215)" opacity="0.85">
               <circle cx="0" cy="0" r="72" stroke="#FBBF24" stroke-width="4" fill="#16110C"/>
               <circle cx="0" cy="0" r="18" fill="#FBBF24"/>
@@ -326,14 +319,12 @@
               <rect x="38" y="-36" width="68" height="48" rx="6" fill="#1C1510" stroke="#FBBF24" stroke-width="2.5"/>
               <path d="M38 -36 L106 -52 L112 -32 L44 -16 Z" fill="#DC2626"/>
             </g>
-            <!-- Center Crown + Brand Emblem -->
             <g transform="translate(720, 210)" text-anchor="middle">
               <path d="M-32 -118 L-16 -92 L0 -126 L16 -92 L32 -118 L24 -76 L-24 -76 Z" fill="url(#goldText)"/>
               <text x="0" y="-12" fill="#FFFFFF" font-family="Fredoka, sans-serif" font-size="88" font-weight="700" letter-spacing="2">Jumbiko</text>
               <text x="0" y="54" fill="url(#goldText)" font-family="Fredoka, italic, sans-serif" font-size="56" font-weight="700">Studio</text>
               <text x="0" y="96" fill="#FDE68A" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="700" letter-spacing="6">LIKE • SHARE • SUBSCRIBE</text>
             </g>
-            <!-- Vintage Cinema Camera Silhouette Right -->
             <g transform="translate(1255, 220)" opacity="0.85">
               <circle cx="-26" cy="-48" r="24" stroke="#FBBF24" stroke-width="3" fill="#1A130D"/>
               <circle cx="18" cy="-48" r="24" stroke="#FBBF24" stroke-width="3" fill="#1A130D"/>
@@ -347,13 +338,11 @@
         </div>
       </div>
 
-      <!-- Dedicated Action & Summary Bar Below Banner (Zero overlap over artwork) -->
       <div class="bg-[#120E0A] border-t border-amber-500/25 px-4 sm:px-6 py-3.5 flex flex-col md:flex-row items-center justify-between gap-3.5">
         <p class="text-xs sm:text-sm text-amber-100/90 text-center md:text-left" data-i18n="hero_tagline">
           Original Hindi cartoon stories, animated moral tales, and fun family entertainment for viewers in India and around the world.
         </p>
 
-        <!-- Distinct Quick Action Links -->
         <div class="flex flex-wrap items-center justify-center gap-2 shrink-0">
           <a href="#featured-story"
              class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white text-xs font-bold shadow transition-all">
@@ -400,7 +389,6 @@
             Watch our latest animated Hindi short story directly below or visit our official YouTube channel for full playlists.
           </p>
 
-          <!-- Responsive 16:9 YouTube Embed Frame -->
           <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black shadow-2xl ring-2 ring-amber-400/40">
             <iframe
               class="absolute inset-0 w-full h-full border-0"
@@ -414,7 +402,6 @@
           </div>
         </div>
 
-        <!-- Interactive Reaction Buttons with localStorage Persistence -->
         <div class="mt-4 pt-4 border-t border-amber-500/20 space-y-3">
           <div class="flex flex-wrap items-center gap-2">
             <button type="button" data-reaction="love" aria-pressed="false"
@@ -442,27 +429,27 @@
           <div class="flex items-center justify-between text-xs">
             <span class="text-slate-400" data-i18n="more_playlists">More full playlists on YouTube</span>
             <a href="https://www.youtube.com/channel/UCoj-qDPvgTzuWUjxRereulw" target="_blank" rel="noopener noreferrer"
-               class="font-bold text-amber-400 hover:text-amber-300 hover:underline">
+               class="font-bold text-amber-400 hover:text-amber-300 hover:underline" data-i18n="open_channel">
               Open Channel ↗
             </a>
           </div>
         </div>
       </div>
 
-      <!-- RIGHT COLUMN (6 cols): What We Create (Custom SVG Illustrations + Interactive Story Highlights) -->
+      <!-- RIGHT COLUMN (6 cols): What We Create -->
       <div id="what-we-create" class="lg:col-span-6 bg-[#14100C] rounded-3xl p-5 sm:p-6 gold-frame flex flex-col justify-between">
         <div>
           <div class="flex items-center justify-between mb-4">
             <h2 class="font-display font-bold text-xl sm:text-2xl text-white" data-i18n="create_title">
               What We Create
             </h2>
-            <span class="text-xs font-bold text-amber-400 bg-amber-500/10 border border-amber-400/30 px-2.5 py-1 rounded-full">
+            <span class="text-xs font-bold text-amber-400 bg-amber-500/10 border border-amber-400/30 px-2.5 py-1 rounded-full" data-i18n="pillars_badge">
               3 Pillars
             </span>
           </div>
 
           <div class="grid grid-cols-1 gap-3.5">
-            <!-- Card 1: Hindi Moral & Bedtime Stories -->
+            <!-- Card 1 -->
             <article class="tilt-card group rounded-2xl p-4 bg-gradient-to-br from-[#231910] via-[#1B130C] to-[#120D09] border border-amber-400/45 hover:border-amber-300 shadow-lg cursor-pointer" data-story-modal="moral">
               <div class="flex items-center gap-3.5">
                 <div class="w-14 h-14 rounded-xl bg-gradient-to-b from-amber-500/20 to-amber-950/40 border border-amber-400/40 flex items-center justify-center shrink-0 shadow-inner">
@@ -473,17 +460,17 @@
                   </svg>
                 </div>
                 <div class="min-w-0">
-                  <h3 class="font-display font-bold text-base text-amber-200 group-hover:text-yellow-300 leading-snug">
+                  <h3 class="font-display font-bold text-base text-amber-200 group-hover:text-yellow-300 leading-snug" data-i18n="pillar1_title">
                     Hindi Moral &amp; Bedtime Stories
                   </h3>
-                  <p class="text-xs text-slate-300 mt-1">
+                  <p class="text-xs text-slate-300 mt-1" data-i18n="pillar1_desc">
                     Engaging animated tales with meaningful lessons for kids and families.
                   </p>
                 </div>
               </div>
             </article>
 
-            <!-- Card 2: Short Cartoon Comedy -->
+            <!-- Card 2 -->
             <article class="tilt-card group rounded-2xl p-4 bg-gradient-to-br from-[#2A140E] via-[#1F110C] to-[#140B08] border border-amber-400/45 hover:border-amber-300 shadow-lg cursor-pointer" data-story-modal="comedy">
               <div class="flex items-center gap-3.5">
                 <div class="w-14 h-14 rounded-xl bg-gradient-to-b from-red-500/20 to-orange-950/40 border border-amber-400/40 flex items-center justify-center shrink-0 shadow-inner">
@@ -496,17 +483,17 @@
                   </svg>
                 </div>
                 <div class="min-w-0">
-                  <h3 class="font-display font-bold text-base text-amber-200 group-hover:text-yellow-300 leading-snug">
+                  <h3 class="font-display font-bold text-base text-amber-200 group-hover:text-yellow-300 leading-snug" data-i18n="pillar2_title">
                     Short Cartoon Comedy
                   </h3>
-                  <p class="text-xs text-slate-300 mt-1">
+                  <p class="text-xs text-slate-300 mt-1" data-i18n="pillar2_desc">
                     Bite-sized, expressive visual stories crafted for quick entertainment.
                   </p>
                 </div>
               </div>
             </article>
 
-            <!-- Card 3: Bilingual Friendly Content -->
+            <!-- Card 3 -->
             <article class="tilt-card group rounded-2xl p-4 bg-gradient-to-br from-[#221712] via-[#1A120E] to-[#110C09] border border-amber-400/45 hover:border-amber-300 shadow-lg cursor-pointer" data-story-modal="bilingual">
               <div class="flex items-center gap-3.5">
                 <div class="w-14 h-14 rounded-xl bg-gradient-to-b from-yellow-400/20 to-amber-950/40 border border-amber-400/40 flex items-center justify-center shrink-0 shadow-inner">
@@ -518,10 +505,10 @@
                   </svg>
                 </div>
                 <div class="min-w-0">
-                  <h3 class="font-display font-bold text-base text-amber-200 group-hover:text-yellow-300 leading-snug">
+                  <h3 class="font-display font-bold text-base text-amber-200 group-hover:text-yellow-300 leading-snug" data-i18n="pillar3_title">
                     Bilingual Friendly Content
                   </h3>
-                  <p class="text-xs text-slate-300 mt-1">
+                  <p class="text-xs text-slate-300 mt-1" data-i18n="pillar3_desc">
                     Hindi audio paired with English titles and captions for global Indian families.
                   </p>
                 </div>
@@ -536,7 +523,7 @@
       </div>
     </section>
 
-    <!-- 3. Interactive Lab Section (Distinct Paired Tabs: 'Moral Wheel' vs 'Next Episode Poll') -->
+    <!-- 3. Interactive Lab Section -->
     <section id="interactive-lab" aria-labelledby="lab-heading" class="scroll-mt-24 bg-[#14100C] rounded-3xl p-6 sm:p-8 gold-frame">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-5 mb-6 border-b border-amber-500/20">
         <div>
@@ -549,7 +536,6 @@
           </h2>
         </div>
 
-        <!-- Distinct Named Tab Switcher: 'Moral Wheel' vs 'Next Episode Poll' -->
         <div role="tablist" aria-label="Interactive Lab Activities" class="inline-flex rounded-full bg-[#0D0907] p-1 border border-amber-500/35 self-start md:self-auto">
           <button id="tab-moral-wheel" type="button" role="tab" aria-selected="true" aria-controls="panel-moral-wheel"
             data-lab-tab="moral-wheel"
@@ -570,10 +556,8 @@
       <div id="panel-moral-wheel" role="tabpanel" aria-labelledby="tab-moral-wheel" data-lab-panel="moral-wheel" class="lab-panel grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
         <div class="lg:col-span-5 flex flex-col items-center justify-center py-2">
           <div class="relative w-44 h-44 mx-auto my-2 flex items-center justify-center">
-            <!-- Top Red Pointer -->
             <div class="absolute -top-2 z-20 w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[16px] border-t-red-500 drop-shadow" aria-hidden="true"></div>
 
-            <!-- Spinning Golden Wheel Button -->
             <button id="spin-moral-btn" type="button" aria-label="Spin the Moral Wheel for a Hindi and English lesson"
               class="w-40 h-40 rounded-full p-1 bg-gradient-to-tr from-amber-600 via-yellow-300 to-amber-500 shadow-gold-glow cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
               <svg id="moral-wheel-svg" class="w-full h-full rounded-full" viewBox="0 0 100 100">
@@ -589,15 +573,14 @@
                 <text x="24" y="60" font-size="11" text-anchor="middle">🐢</text>
                 <text x="34" y="24" font-size="11" text-anchor="middle">🌟</text>
                 <circle cx="50" cy="50" r="14" fill="#FBBF24" stroke="#78350F" stroke-width="2"/>
-                <text x="50" y="53" font-size="7.5" font-weight="bold" fill="#1C1917" text-anchor="middle">SPIN</text>
+                <text x="50" y="53" font-size="7.5" font-weight="bold" fill="#1C1917" text-anchor="middle" data-i18n="wheel_spin_label">SPIN</text>
               </svg>
             </button>
           </div>
           <button id="spin-moral-cta" type="button"
-            class="mt-2 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-amber-500/15 hover:bg-amber-500/25 border border-amber-400/40 text-amber-300 text-xs font-bold transition-all cursor-pointer"
-            data-i18n="spin_btn">
+            class="mt-2 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-amber-500/15 hover:bg-amber-500/25 border border-amber-400/40 text-amber-300 text-xs font-bold transition-all cursor-pointer">
             <span>🎡</span>
-            <span>Spin Moral Wheel</span>
+            <span data-i18n="spin_btn">Spin Moral Wheel</span>
           </button>
         </div>
 
@@ -633,17 +616,16 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-center">
           <button type="button" data-poll="chotu" aria-pressed="false"
             class="poll-btn p-4 rounded-2xl bg-[#1E1711] hover:bg-amber-500/15 border border-amber-400/40 transition-all cursor-pointer">
-            <span class="block text-sm font-display font-bold text-amber-200 leading-snug">Chotu's Big Adventure</span>
+            <span class="block text-sm font-display font-bold text-amber-200 leading-snug" data-i18n="poll_opt_chotu">Chotu's Big Adventure</span>
             <span class="poll-pct block text-xl font-extrabold text-amber-400 mt-1" id="pct-chotu">58%</span>
           </button>
           <button type="button" data-poll="forest" aria-pressed="false"
             class="poll-btn p-4 rounded-2xl bg-[#1E1711] hover:bg-amber-500/15 border border-amber-400/40 transition-all cursor-pointer">
-            <span class="block text-sm font-display font-bold text-amber-200 leading-snug">The Magical Forest</span>
+            <span class="block text-sm font-display font-bold text-amber-200 leading-snug" data-i18n="poll_opt_forest">The Magical Forest</span>
             <span class="poll-pct block text-xl font-extrabold text-amber-400 mt-1" id="pct-forest">42%</span>
           </button>
         </div>
 
-        <!-- Dual Progress Bar -->
         <div class="w-full h-3 bg-slate-800 rounded-full overflow-hidden flex border border-amber-500/30">
           <div id="poll-bar-chotu" class="h-full bg-gradient-to-r from-red-600 to-amber-500 transition-all duration-500" style="width: 58%"></div>
           <div id="poll-bar-forest" class="h-full bg-amber-300/75 transition-all duration-500" style="width: 42%"></div>
@@ -665,22 +647,19 @@
           <h2 class="font-display font-bold text-2xl sm:text-3xl text-white mb-2" data-i18n="picks_title">
             Recommended Family &amp; Kids Picks
           </h2>
-          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Looking for illustrated Hindi storybooks, coloring kits, and creative activity sets featured in our stories? Check our latest video descriptions on
-            <a href="https://www.youtube.com/channel/UCoj-qDPvgTzuWUjxRereulw" target="_blank" rel="noopener noreferrer" class="font-bold text-amber-400 hover:text-amber-300 underline decoration-amber-500/60 underline-offset-4">YouTube</a>
-            for curated recommendations.
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed" data-i18n="picks_desc">
+            Looking for illustrated Hindi storybooks, coloring kits, and creative activity sets featured in our stories? Check our latest video descriptions on YouTube (@jumbikostudio) for curated recommendations.
           </p>
         </div>
 
-        <!-- Age Filter Tabs (All, Ages 2-5, Ages 6-10) -->
         <div class="flex flex-wrap gap-2 shrink-0" role="group" aria-label="Filter picks by age group">
-          <button type="button" class="pick-filter active px-3.5 py-1.5 rounded-full text-xs font-bold bg-gradient-to-r from-amber-500 to-yellow-400 text-black shadow transition-all cursor-pointer" data-age="all">
+          <button type="button" class="pick-filter active px-3.5 py-1.5 rounded-full text-xs font-bold bg-gradient-to-r from-amber-500 to-yellow-400 text-black shadow transition-all cursor-pointer" data-age="all" data-i18n="age_all">
             All
           </button>
-          <button type="button" class="pick-filter px-3.5 py-1.5 rounded-full text-xs font-bold bg-[#1F1812] text-amber-200 border border-amber-500/30 hover:border-amber-400 transition-all cursor-pointer" data-age="toddlers">
+          <button type="button" class="pick-filter px-3.5 py-1.5 rounded-full text-xs font-bold bg-[#1F1812] text-amber-200 border border-amber-500/30 hover:border-amber-400 transition-all cursor-pointer" data-age="toddlers" data-i18n="age_2_5">
             Ages 2–5
           </button>
-          <button type="button" class="pick-filter px-3.5 py-1.5 rounded-full text-xs font-bold bg-[#1F1812] text-amber-200 border border-amber-500/30 hover:border-amber-400 transition-all cursor-pointer" data-age="kids">
+          <button type="button" class="pick-filter px-3.5 py-1.5 rounded-full text-xs font-bold bg-[#1F1812] text-amber-200 border border-amber-500/30 hover:border-amber-400 transition-all cursor-pointer" data-age="kids" data-i18n="age_6_10">
             Ages 6–10
           </button>
         </div>
@@ -693,20 +672,20 @@
           <div>
             <div class="relative h-28 rounded-xl bg-gradient-to-br from-emerald-950/70 via-amber-950/40 to-[#140F0B] border border-amber-500/25 flex items-center justify-center mb-3">
               <span class="text-5xl" aria-hidden="true">📖</span>
-              <span class="absolute bottom-2 right-2 text-[11px] font-extrabold bg-amber-400 text-black px-2.5 py-0.5 rounded-full shadow">
+              <span class="pick-age-badge absolute bottom-2 right-2 text-[11px] font-extrabold bg-amber-400 text-black px-2.5 py-0.5 rounded-full shadow" data-i18n="age_2_5">
                 Ages 2–5
               </span>
             </div>
-            <h3 class="font-display font-bold text-base text-amber-200 mb-1">
+            <h3 class="font-display font-bold text-base text-amber-200 mb-1" data-i18n="pick1_title">
               Illustrated Hindi Storybooks
             </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-3">
+            <p class="text-xs text-slate-300 leading-relaxed mb-3" data-i18n="pick1_desc">
               Colorful moral picture books with easy Hindi &amp; English vocabulary for cozy bedtime reading.
             </p>
           </div>
           <a href="https://www.youtube.com/channel/UCoj-qDPvgTzuWUjxRereulw" target="_blank" rel="noopener noreferrer"
              class="inline-flex items-center justify-center gap-1 w-full py-2 px-3 rounded-xl bg-amber-500/15 hover:bg-amber-400 text-amber-300 hover:text-black font-bold text-xs border border-amber-400/40 transition-colors">
-            <span>@jumbikostudio Links</span>
+            <span data-i18n="pick_links_cta">@jumbikostudio Links</span>
             <span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -716,20 +695,20 @@
           <div>
             <div class="relative h-28 rounded-xl bg-gradient-to-br from-rose-950/70 via-orange-950/40 to-[#140F0B] border border-amber-500/25 flex items-center justify-center mb-3">
               <span class="text-5xl" aria-hidden="true">🖍️</span>
-              <span class="absolute bottom-2 right-2 text-[11px] font-extrabold bg-amber-400 text-black px-2.5 py-0.5 rounded-full shadow">
+              <span class="pick-age-badge absolute bottom-2 right-2 text-[11px] font-extrabold bg-amber-400 text-black px-2.5 py-0.5 rounded-full shadow" data-i18n="age_2_5">
                 Ages 2–5
               </span>
             </div>
-            <h3 class="font-display font-bold text-base text-amber-200 mb-1">
+            <h3 class="font-display font-bold text-base text-amber-200 mb-1" data-i18n="pick2_title">
               Beginner Coloring Kits
             </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-3">
+            <p class="text-xs text-slate-300 leading-relaxed mb-3" data-i18n="pick2_desc">
               Jumbo non-toxic crayons and bold cartoon outline pads designed for little artists.
             </p>
           </div>
           <a href="https://www.youtube.com/channel/UCoj-qDPvgTzuWUjxRereulw" target="_blank" rel="noopener noreferrer"
              class="inline-flex items-center justify-center gap-1 w-full py-2 px-3 rounded-xl bg-amber-500/15 hover:bg-amber-400 text-amber-300 hover:text-black font-bold text-xs border border-amber-400/40 transition-colors">
-            <span>@jumbikostudio Links</span>
+            <span data-i18n="pick_links_cta">@jumbikostudio Links</span>
             <span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -739,20 +718,20 @@
           <div>
             <div class="relative h-28 rounded-xl bg-gradient-to-br from-amber-900/60 via-yellow-950/40 to-[#140F0B] border border-amber-500/25 flex items-center justify-center mb-3">
               <span class="text-5xl" aria-hidden="true">🎨</span>
-              <span class="absolute bottom-2 right-2 text-[11px] font-extrabold bg-amber-400 text-black px-2.5 py-0.5 rounded-full shadow">
+              <span class="pick-age-badge absolute bottom-2 right-2 text-[11px] font-extrabold bg-amber-400 text-black px-2.5 py-0.5 rounded-full shadow" data-i18n="age_6_10">
                 Ages 6–10
               </span>
             </div>
-            <h3 class="font-display font-bold text-base text-amber-200 mb-1">
+            <h3 class="font-display font-bold text-base text-amber-200 mb-1" data-i18n="pick3_title">
               Cartoon Sketch &amp; Art Sets
             </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-3">
+            <p class="text-xs text-slate-300 leading-relaxed mb-3" data-i18n="pick3_desc">
               Character drawing guides, watercolor palettes, and DIY craft packs inspired by our episodes.
             </p>
           </div>
           <a href="https://www.youtube.com/channel/UCoj-qDPvgTzuWUjxRereulw" target="_blank" rel="noopener noreferrer"
              class="inline-flex items-center justify-center gap-1 w-full py-2 px-3 rounded-xl bg-amber-500/15 hover:bg-amber-400 text-amber-300 hover:text-black font-bold text-xs border border-amber-400/40 transition-colors">
-            <span>@jumbikostudio Links</span>
+            <span data-i18n="pick_links_cta">@jumbikostudio Links</span>
             <span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -762,20 +741,20 @@
           <div>
             <div class="relative h-28 rounded-xl bg-gradient-to-br from-indigo-950/70 via-amber-950/40 to-[#140F0B] border border-amber-500/25 flex items-center justify-center mb-3">
               <span class="text-5xl" aria-hidden="true">🧩</span>
-              <span class="absolute bottom-2 right-2 text-[11px] font-extrabold bg-amber-400 text-black px-2.5 py-0.5 rounded-full shadow">
+              <span class="pick-age-badge absolute bottom-2 right-2 text-[11px] font-extrabold bg-amber-400 text-black px-2.5 py-0.5 rounded-full shadow" data-i18n="age_6_10">
                 Ages 6–10
               </span>
             </div>
-            <h3 class="font-display font-bold text-base text-amber-200 mb-1">
+            <h3 class="font-display font-bold text-base text-amber-200 mb-1" data-i18n="pick4_title">
               Creative Activity &amp; Puzzle Sets
             </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-3">
+            <p class="text-xs text-slate-300 leading-relaxed mb-3" data-i18n="pick4_desc">
               Screen-free moral story cards, bilingual word games, and brain-teasing family board puzzles.
             </p>
           </div>
           <a href="https://www.youtube.com/channel/UCoj-qDPvgTzuWUjxRereulw" target="_blank" rel="noopener noreferrer"
              class="inline-flex items-center justify-center gap-1 w-full py-2 px-3 rounded-xl bg-amber-500/15 hover:bg-amber-400 text-amber-300 hover:text-black font-bold text-xs border border-amber-400/40 transition-colors">
-            <span>@jumbikostudio Links</span>
+            <span data-i18n="pick_links_cta">@jumbikostudio Links</span>
             <span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -784,12 +763,15 @@
       <!-- Copyable Amazon Associates Tag / Reference Bar -->
       <div class="mt-6 pt-4 border-t border-amber-500/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 bg-[#1A130D] rounded-2xl px-4 py-3 border border-amber-500/20">
         <div class="text-xs text-slate-300 leading-relaxed">
-          <span class="font-bold text-amber-300">Amazon Associates Note:</span> Add your Associate tag (<code id="affiliate-tag-code" class="px-1.5 py-0.5 rounded bg-black/60 text-amber-200 border border-amber-500/30">tag=jumbikostudio-21</code>) to curated Amazon.in &amp; Amazon.com links in video descriptions.
+          <span class="font-bold text-amber-300" data-i18n="tag_note_label">Amazon Associates Note:</span>
+          <span data-i18n="tag_note_prefix">Add your Associate tag</span>
+          (<code id="affiliate-tag-code" class="px-1.5 py-0.5 rounded bg-black/60 text-amber-200 border border-amber-500/30">tag=jumbikostudio-21</code>)
+          <span data-i18n="tag_note_suffix">to curated Amazon.in &amp; Amazon.com links in video descriptions.</span>
         </div>
         <button id="copy-tag-btn" type="button"
           class="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-500/15 hover:bg-amber-400 text-amber-300 hover:text-black border border-amber-400/40 text-xs font-bold transition-colors cursor-pointer">
           <span aria-hidden="true">📋</span>
-          <span>Copy Tag Template</span>
+          <span data-i18n="copy_tag_btn">Copy Tag Template</span>
         </button>
       </div>
     </section>
@@ -806,34 +788,34 @@
           <h2 class="font-display font-bold text-2xl sm:text-3xl text-white mb-3" data-i18n="about_title">
             About Jumbiko Studio
           </h2>
-          <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
-            <strong>Jumbiko Studio</strong> (<code class="text-amber-300">@jumbikostudio</code>) crafts original Hindi animated stories, gentle bedtime fables, and expressive cartoon comedy designed for children and multi-generational families in India and across the globe.
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4" data-i18n="about_p1">
+            Jumbiko Studio (@jumbikostudio) crafts original Hindi animated stories, gentle bedtime fables, and expressive cartoon comedy designed for children and multi-generational families in India and across the globe.
           </p>
-          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+          <p class="text-slate-300 text-sm leading-relaxed mb-4" data-i18n="about_p2">
             Every episode blends warm Indian storytelling values—kindness, honesty, curiosity, and family togetherness—with approachable bilingual titles and captions so kids everywhere can enjoy and learn together.
           </p>
-          <p class="text-xs text-amber-200/85 bg-[#1B140E] border border-amber-500/25 rounded-2xl p-3.5 leading-relaxed mb-6">
-            <strong class="text-amber-300">Affiliate &amp; Editorial Note:</strong> Family &amp; Kids Picks highlight illustrated Hindi books, art kits, and learning activities selected for parents and educators. Links may use Amazon Associates tracking tags to support studio production.
+          <p class="text-xs text-amber-200/85 bg-[#1B140E] border border-amber-500/25 rounded-2xl p-3.5 leading-relaxed mb-6" data-i18n="about_note">
+            Affiliate &amp; Editorial Note: Family &amp; Kids Picks highlight illustrated Hindi books, art kits, and learning activities selected for parents and educators. Links may use Amazon Associates tracking tags to support studio production.
           </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4 border-t border-amber-500/20">
           <div class="rounded-2xl bg-[#1C150F] border border-amber-400/25 p-3.5">
-            <div class="font-display font-bold text-amber-300 text-base">Hindi + EN</div>
-            <div class="text-xs text-slate-300 mt-0.5">Expressive Hindi stories with clear captions</div>
+            <div class="font-display font-bold text-amber-300 text-base" data-i18n="stat1_title">Hindi + EN</div>
+            <div class="text-xs text-slate-300 mt-0.5" data-i18n="stat1_desc">Expressive Hindi stories with clear captions</div>
           </div>
           <div class="rounded-2xl bg-[#1C150F] border border-amber-400/25 p-3.5">
-            <div class="font-display font-bold text-amber-300 text-base">Family Safe</div>
-            <div class="text-xs text-slate-300 mt-0.5">Positive morals &amp; lighthearted comedy</div>
+            <div class="font-display font-bold text-amber-300 text-base" data-i18n="stat2_title">Family Safe</div>
+            <div class="text-xs text-slate-300 mt-0.5" data-i18n="stat2_desc">Positive morals &amp; lighthearted comedy</div>
           </div>
           <div class="rounded-2xl bg-[#1C150F] border border-amber-400/25 p-3.5">
-            <div class="font-display font-bold text-amber-300 text-base">Global Reach</div>
-            <div class="text-xs text-slate-300 mt-0.5">Made for viewers in India &amp; worldwide</div>
+            <div class="font-display font-bold text-amber-300 text-base" data-i18n="stat3_title">Global Reach</div>
+            <div class="text-xs text-slate-300 mt-0.5" data-i18n="stat3_desc">Made for viewers in India &amp; worldwide</div>
           </div>
         </div>
       </div>
 
-      <!-- Contact Us Card (6 cols) with Distinct Tabs: 'Send Message' vs 'Studio Info & FAQ' -->
+      <!-- Contact Us Card (6 cols) -->
       <div id="contact-us" class="lg:col-span-6 scroll-mt-24 bg-[#14100C] rounded-3xl p-6 sm:p-8 gold-frame flex flex-col justify-between">
         <div>
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
@@ -847,7 +829,6 @@
               </h2>
             </div>
 
-            <!-- Distinct Named Tabs for Contact Us: 'Send Message' vs 'Studio Info & FAQ' -->
             <div role="tablist" aria-label="Contact Us Options" class="inline-flex rounded-full bg-[#0D0907] p-1 border border-amber-500/35 self-start">
               <button id="tab-send-message" type="button" role="tab" aria-selected="true" aria-controls="panel-send-message"
                 data-contact-tab="send-message"
@@ -868,7 +849,7 @@
           <div id="panel-send-message" role="tabpanel" aria-labelledby="tab-send-message" data-contact-panel="send-message" class="contact-panel">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-3.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
               <p>
-                Send story ideas, family feedback, or inquiries directly to
+                <span data-i18n="contact_intro">Send story ideas, family feedback, or inquiries directly to</span>
                 <a href="mailto:jumbikostudio@gmail.com?subject=Hello%20Jumbiko%20Studio%20(%40jumbikostudio)"
                    class="font-bold text-amber-300 hover:text-yellow-300 underline decoration-amber-400/60 underline-offset-4">
                   jumbikostudio@gmail.com
@@ -877,43 +858,43 @@
               <button id="copy-studio-email-btn" type="button"
                 class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#1E1711] hover:bg-amber-500/20 border border-amber-400/35 text-amber-200 text-xs font-semibold transition-colors cursor-pointer">
                 <span aria-hidden="true">📋</span>
-                <span>Copy Email</span>
+                <span data-i18n="copy_email_btn">Copy Email</span>
               </button>
             </div>
 
             <form id="contact-form" action="https://formsubmit.co/ajax/jumbikostudio@gmail.com" method="POST" class="space-y-3" novalidate>
-              <!-- FormSubmit configuration fields -->
               <input type="hidden" name="_subject" value="New Message for Jumbiko Studio (@jumbikostudio)" />
               <input type="hidden" name="_template" value="table" />
               <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
 
               <div>
-                <label for="contact-name" class="block text-xs font-bold text-amber-200 mb-1">Your Name</label>
-                <input id="contact-name" name="name" type="text" required placeholder="e.g., Aarav Sharma"
+                <label for="contact-name" class="block text-xs font-bold text-amber-200 mb-1" data-i18n="label_name">Your Name</label>
+                <input id="contact-name" name="name" type="text" required placeholder="e.g., Aarav Sharma" data-i18n-placeholder="placeholder_name"
                   class="w-full rounded-xl bg-[#1D1610] border border-amber-500/35 focus:border-amber-300 focus:outline-none px-3.5 py-2 text-sm text-white placeholder-slate-500" />
               </div>
               <div>
-                <label for="contact-email" class="block text-xs font-bold text-amber-200 mb-1">Email Address</label>
+                <label for="contact-email" class="block text-xs font-bold text-amber-200 mb-1" data-i18n="label_email">Email Address</label>
                 <input id="contact-email" name="email" type="email" required placeholder="you@example.com"
                   class="w-full rounded-xl bg-[#1D1610] border border-amber-500/35 focus:border-amber-300 focus:outline-none px-3.5 py-2 text-sm text-white placeholder-slate-500" />
               </div>
               <div>
-                <label for="contact-message" class="block text-xs font-bold text-amber-200 mb-1">Message or Story Suggestion</label>
-                <textarea id="contact-message" name="message" rows="3" required placeholder="Share a bedtime story moral idea or inquiry..."
+                <label for="contact-message" class="block text-xs font-bold text-amber-200 mb-1" data-i18n="label_message">Message or Story Suggestion</label>
+                <textarea id="contact-message" name="message" rows="3" required placeholder="Share a bedtime story moral idea or inquiry..." data-i18n-placeholder="placeholder_message"
                   class="w-full rounded-xl bg-[#1D1610] border border-amber-500/35 focus:border-amber-300 focus:outline-none px-3.5 py-2 text-sm text-white placeholder-slate-500 resize-y"></textarea>
               </div>
-              <p class="text-[11px] text-slate-400 leading-relaxed">
-                Sent via FormSubmit to <strong class="text-amber-200">jumbikostudio@gmail.com</strong>. (On the very first submission to a new inbox, check <strong class="text-amber-200">jumbikostudio@gmail.com</strong> and click FormSubmit’s activation link to confirm delivery.)
+              <p class="text-[11px] text-slate-400 leading-relaxed" data-i18n="formsubmit_note">
+                Sent via FormSubmit to jumbikostudio@gmail.com. (On the very first submission to a new inbox, check jumbikostudio@gmail.com and click FormSubmit’s activation link to confirm delivery.)
               </p>
               <p id="contact-feedback" class="text-xs min-h-[1.25rem] text-amber-300 leading-relaxed" role="status" aria-live="polite"></p>
               <div class="flex flex-col sm:flex-row gap-2.5">
                 <button id="contact-submit-btn" type="submit"
                   class="flex-1 py-2.5 px-5 rounded-full bg-gradient-to-r from-red-600 via-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-display font-bold text-sm border border-amber-300/60 shadow-lg transition-all cursor-pointer disabled:opacity-60">
-                  Send to jumbikostudio@gmail.com ✉
+                  <span data-i18n="send_to_prefix">Send to</span> jumbikostudio@gmail.com ✉
                 </button>
                 <a id="direct-mailto-fallback"
                    href="mailto:jumbikostudio@gmail.com?subject=Jumbiko%20Studio%20Inquiry%20(%40jumbikostudio)"
-                   class="mailto-toast-trigger inline-flex items-center justify-center py-2.5 px-4 rounded-full bg-[#1E1711] hover:bg-[#2A2018] border border-amber-400/40 text-amber-200 font-bold text-xs transition-colors">
+                   class="mailto-toast-trigger inline-flex items-center justify-center py-2.5 px-4 rounded-full bg-[#1E1711] hover:bg-[#2A2018] border border-amber-400/40 text-amber-200 font-bold text-xs transition-colors"
+                   data-i18n="open_mail_app">
                   Open Mail App
                 </a>
               </div>
@@ -923,24 +904,24 @@
           <!-- Contact Tab Panel 2: Studio Info & FAQ -->
           <div id="panel-studio-faq" role="tabpanel" aria-labelledby="tab-studio-faq" data-contact-panel="studio-faq" class="contact-panel hidden space-y-3 text-xs sm:text-sm text-slate-300">
             <div class="rounded-2xl bg-[#1C150F] border border-amber-400/25 p-3.5">
-              <h3 class="font-display font-bold text-amber-300 text-sm mb-1">How do we submit story or moral ideas?</h3>
-              <p class="text-xs text-slate-300 leading-relaxed">Use the <strong class="text-amber-200">Send Message</strong> tab to email <a href="mailto:jumbikostudio@gmail.com?subject=Story%20or%20Moral%20Idea%20for%20Jumbiko%20Studio" class="text-amber-400 underline">jumbikostudio@gmail.com</a> directly, or comment on <a href="https://www.youtube.com/channel/UCoj-qDPvgTzuWUjxRereulw" target="_blank" rel="noopener noreferrer" class="text-amber-400 underline">@jumbikostudio</a>.</p>
+              <h3 class="font-display font-bold text-amber-300 text-sm mb-1" data-i18n="faq1_q">How do we submit story or moral ideas?</h3>
+              <p class="text-xs text-slate-300 leading-relaxed" data-i18n="faq1_a">Use the Send Message tab to email jumbikostudio@gmail.com directly, or comment on @jumbikostudio.</p>
             </div>
             <div class="rounded-2xl bg-[#1C150F] border border-amber-400/25 p-3.5">
-              <h3 class="font-display font-bold text-amber-300 text-sm mb-1">Are episodes suitable for kids &amp; parents?</h3>
-              <p class="text-xs text-slate-300 leading-relaxed">Yes! All Jumbiko Studio animated stories focus on family-safe entertainment, moral lessons, and Hindi audio with English titles/captions.</p>
+              <h3 class="font-display font-bold text-amber-300 text-sm mb-1" data-i18n="faq2_q">Are episodes suitable for kids &amp; parents?</h3>
+              <p class="text-xs text-slate-300 leading-relaxed" data-i18n="faq2_a">Yes! All Jumbiko Studio animated stories focus on family-safe entertainment, moral lessons, and Hindi audio with English titles/captions.</p>
             </div>
             <div class="rounded-2xl bg-[#1C150F] border border-amber-400/25 p-3.5">
-              <h3 class="font-display font-bold text-amber-300 text-sm mb-1">Where are recommended books &amp; kits listed?</h3>
-              <p class="text-xs text-slate-300 leading-relaxed">Curated family &amp; kids picks appear in the <strong class="text-amber-200">Family Picks</strong> section and in our YouTube video descriptions.</p>
+              <h3 class="font-display font-bold text-amber-300 text-sm mb-1" data-i18n="faq3_q">Where are recommended books &amp; kits listed?</h3>
+              <p class="text-xs text-slate-300 leading-relaxed" data-i18n="faq3_a">Curated family &amp; kids picks appear in the Family Picks section and in our YouTube video descriptions.</p>
             </div>
           </div>
         </div>
 
         <div class="mt-4 pt-3 border-t border-amber-500/20 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400">
-          <span>Email: <a href="mailto:jumbikostudio@gmail.com" class="font-bold text-amber-200 hover:text-amber-300 underline">jumbikostudio@gmail.com</a></span>
+          <span><span data-i18n="email_label">Email</span>: <a href="mailto:jumbikostudio@gmail.com" class="font-bold text-amber-200 hover:text-amber-300 underline">jumbikostudio@gmail.com</a></span>
           <a href="https://www.youtube.com/channel/UCoj-qDPvgTzuWUjxRereulw" target="_blank" rel="noopener noreferrer"
-             class="font-bold text-amber-400 hover:text-amber-300 hover:underline">
+             class="font-bold text-amber-400 hover:text-amber-300 hover:underline" data-i18n="yt_channel_link">
             YouTube Channel ↗
           </a>
         </div>
@@ -949,12 +930,11 @@
 
   </main>
 
-  <!-- Structured Responsive Footer with Logo, Quick Links, Affiliate Disclosure & Copyright -->
+  <!-- Structured Responsive Footer -->
   <footer class="bg-[#070504] text-slate-300 border-t border-amber-500/30 py-10 px-4 sm:px-6">
     <div class="max-w-7xl mx-auto space-y-6">
       <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
 
-        <!-- Left: Logo + Brand & Copyright -->
         <div class="flex items-center gap-4">
           <div class="w-12 h-12 rounded-full p-0.5 bg-gradient-to-tr from-amber-600 via-yellow-300 to-amber-500 shrink-0">
             <div class="w-full h-full rounded-full overflow-hidden bg-black flex items-center justify-center">
@@ -984,27 +964,25 @@
                 jumbikostudio@gmail.com
               </a>
             </div>
-            <p class="text-xs text-slate-400 mt-1">
-              &copy; 2026 Jumbiko Studio. All rights reserved.
+            <p class="text-xs text-slate-400 mt-1" data-i18n="copyright_text">
+              © 2026 Jumbiko Studio. All rights reserved.
             </p>
           </div>
         </div>
 
-        <!-- Center: Distinct Quick Links -->
         <nav class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-semibold text-slate-300" aria-label="Footer Quick Links">
-          <a href="#top" class="hover:text-amber-300 transition-colors">Home</a>
-          <a href="#featured-story" class="hover:text-amber-300 transition-colors">Stories</a>
-          <a href="#interactive-lab" class="hover:text-amber-300 transition-colors">Interactive Lab</a>
-          <a href="#family-picks" class="hover:text-amber-300 transition-colors">Family Picks</a>
-          <a href="#about-us" class="hover:text-amber-300 transition-colors">About Us</a>
-          <a href="#contact-us" class="hover:text-amber-300 transition-colors">Contact Us</a>
-          <a href="mailto:jumbikostudio@gmail.com" class="hover:text-amber-300 transition-colors">Email Studio ↗</a>
-          <a href="https://www.youtube.com/channel/UCoj-qDPvgTzuWUjxRereulw" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 transition-colors">YouTube Channel ↗</a>
+          <a href="#top" class="hover:text-amber-300 transition-colors" data-i18n="nav_home">Home</a>
+          <a href="#featured-story" class="hover:text-amber-300 transition-colors" data-i18n="nav_stories">Stories</a>
+          <a href="#interactive-lab" class="hover:text-amber-300 transition-colors" data-i18n="nav_lab">Interactive Lab</a>
+          <a href="#family-picks" class="hover:text-amber-300 transition-colors" data-i18n="nav_picks">Family Picks</a>
+          <a href="#about-us" class="hover:text-amber-300 transition-colors" data-i18n="nav_about">About Us</a>
+          <a href="#contact-us" class="hover:text-amber-300 transition-colors" data-i18n="nav_contact">Contact Us</a>
+          <a href="mailto:jumbikostudio@gmail.com" class="hover:text-amber-300 transition-colors" data-i18n="footer_email_studio">Email Studio ↗</a>
+          <a href="https://www.youtube.com/channel/UCoj-qDPvgTzuWUjxRereulw" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 transition-colors" data-i18n="yt_channel_link">YouTube Channel ↗</a>
         </nav>
 
-        <!-- Right: Preserved Affiliate Disclosure -->
         <div class="max-w-xl bg-[#120E0A] rounded-2xl p-4 border border-amber-500/20 text-xs text-slate-300 leading-relaxed">
-          <p><strong class="text-amber-300">Affiliate Disclosure:</strong> Jumbiko Studio participates in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.in and Amazon.com.</p>
+          <p><strong class="text-amber-300" data-i18n="disclosure_label">Affiliate Disclosure:</strong> <span data-i18n="disclosure_body">Jumbiko Studio participates in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.in and Amazon.com.</span></p>
         </div>
       </div>
     </div>
@@ -1027,16 +1005,16 @@
         Story summary goes here.
       </p>
       <div class="bg-[#231910] rounded-2xl p-3.5 border border-amber-400/35 mb-5">
-        <div class="text-xs font-bold text-amber-400 uppercase tracking-wide mb-1">🌟 Key Highlight / Lesson</div>
+        <div id="modal-moral-heading" class="text-xs font-bold text-amber-400 uppercase tracking-wide mb-1">🌟 Key Highlight / Lesson</div>
         <p id="modal-moral" class="text-sm font-semibold text-amber-100">Kindness always returns.</p>
       </div>
       <div class="flex flex-col sm:flex-row gap-3">
-        <a href="https://www.youtube.com/channel/UCoj-qDPvgTzuWUjxRereulw" target="_blank" rel="noopener noreferrer"
+        <a id="modal-yt-cta" href="https://www.youtube.com/channel/UCoj-qDPvgTzuWUjxRereulw" target="_blank" rel="noopener noreferrer"
            class="flex-1 text-center bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-display font-bold py-3 px-5 rounded-full shadow-md transition-all">
           Watch on Jumbiko YouTube ↗
         </a>
         <button id="modal-watch-featured" type="button"
-          class="px-5 py-3 rounded-full bg-white/10 hover:bg-white/20 text-amber-200 font-bold text-sm cursor-pointer">
+          class="px-5 py-3 rounded-full bg-white/10 hover:bg-white/20 text-amber-200 font-bold text-sm cursor-pointer" data-i18n="modal_play_featured">
           Play Featured Video
         </button>
       </div>
@@ -1046,6 +1024,11 @@
   <!-- Application Logic -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      const STUDIO_EMAIL = 'jumbikostudio@gmail.com';
+      const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${STUDIO_EMAIL}`;
+      let currentLang = 'en';
+      let currentModalKey = 'guide';
+
       /* ---------------------------------------------------------
        * 1. Toast Notification & Cleanup Helpers
        * --------------------------------------------------------- */
@@ -1106,6 +1089,15 @@
       const theaterLabel = document.getElementById('theater-label');
       let isTheater = false;
 
+      function syncTheaterButtonText() {
+        if (!theaterLabel) return;
+        if (currentLang === 'hi') {
+          theaterLabel.textContent = isTheater ? 'डेलाइट' : 'थिएटर';
+        } else {
+          theaterLabel.textContent = isTheater ? 'Daylight' : 'Theater';
+        }
+      }
+
       function setTheaterMode(enabled, silent = false) {
         isTheater = Boolean(enabled);
         if (theaterBackdrop) {
@@ -1122,11 +1114,13 @@
         if (theaterIcon) {
           theaterIcon.textContent = isTheater ? '☀️' : '🌙';
         }
-        if (theaterLabel) {
-          theaterLabel.textContent = isTheater ? 'Daylight' : 'Theater';
-        }
+        syncTheaterButtonText();
         if (!silent) {
-          showToast(isTheater ? '🌙' : '☀️', isTheater ? 'Theater mode enabled' : 'Theater mode off');
+          if (currentLang === 'hi') {
+            showToast(isTheater ? '🌙' : '☀️', isTheater ? 'थिएटर मोड चालू हुआ' : 'थिएटर मोड बंद हुआ');
+          } else {
+            showToast(isTheater ? '🌙' : '☀️', isTheater ? 'Theater mode enabled' : 'Theater mode off');
+          }
         }
       }
 
@@ -1144,42 +1138,84 @@
       const modalTitle = document.getElementById('modal-title');
       const modalDesc = document.getElementById('modal-desc');
       const modalMoral = document.getElementById('modal-moral');
+      const modalMoralHeading = document.getElementById('modal-moral-heading');
+      const modalYtCta = document.getElementById('modal-yt-cta');
       const guideModalBtn = document.getElementById('guide-modal-btn');
 
       const storyDetails = {
-        moral: {
-          badge: 'Hindi Moral & Bedtime Stories',
-          title: 'Bedtime Tales That Stay With Kids',
-          desc: 'Gentle Hindi animated stories built around patience, honesty, sharing, and kindness for young listeners and parents.',
-          moral: '“सच्ची दोस्ती और ईमानदारी हर मुश्किल को आसान बना देती है।” — True friendship and honesty make every challenge easier.'
+        en: {
+          moral: {
+            badge: 'Hindi Moral & Bedtime Stories',
+            title: 'Bedtime Tales That Stay With Kids',
+            desc: 'Gentle Hindi animated stories built around patience, honesty, sharing, and kindness for young listeners and parents.',
+            moral: '“सच्ची दोस्ती और ईमानदारी हर मुश्किल को आसान बना देती है।” — True friendship and honesty make every challenge easier.'
+          },
+          comedy: {
+            badge: 'Short Cartoon Comedy',
+            title: 'Expressive & Lighthearted Fun',
+            desc: 'Fast-paced, expressive cartoon moments crafted to bring smiles and clean family laughter.',
+            moral: 'Laughter and teamwork turn everyday mix-ups into joyful memories.'
+          },
+          bilingual: {
+            badge: 'Bilingual Friendly Content',
+            title: 'Hindi Audio + English Titles & Captions',
+            desc: 'Designed for families in India and abroad who enjoy Hindi storytelling alongside accessible English titles and captions.',
+            moral: 'Exploring two languages opens new worlds of stories and imagination.'
+          },
+          guide: {
+            badge: 'Jumbiko Studio Channel Guide',
+            title: 'Welcome to @jumbikostudio',
+            desc: 'Use the Moral Wheel and Next Episode Poll in the Interactive Lab, browse curated Family Picks, or send story ideas directly to jumbikostudio@gmail.com.',
+            moral: 'Subscribe on YouTube to catch new Hindi animated stories and family episodes.'
+          }
         },
-        comedy: {
-          badge: 'Short Cartoon Comedy',
-          title: 'Expressive & Lighthearted Fun',
-          desc: 'Fast-paced, expressive cartoon moments crafted to bring smiles and clean family laughter.',
-          moral: 'Laughter and teamwork turn everyday mix-ups into joyful memories.'
-        },
-        bilingual: {
-          badge: 'Bilingual Friendly Content',
-          title: 'Hindi Audio + English Titles & Captions',
-          desc: 'Designed for families in India and abroad who enjoy Hindi storytelling alongside accessible English titles and captions.',
-          moral: 'Exploring two languages opens new worlds of stories and imagination.'
-        },
-        guide: {
-          badge: 'Jumbiko Studio Channel Guide',
-          title: 'Welcome to @jumbikostudio',
-          desc: 'Use the Moral Wheel and Next Episode Poll in the Interactive Lab, browse curated Family Picks, or send story ideas directly to jumbikostudio@gmail.com.',
-          moral: 'Subscribe on YouTube to catch new Hindi animated stories and family episodes.'
+        hi: {
+          moral: {
+            badge: 'हिंदी नैतिक और सोने से पहले की कहानियाँ',
+            title: 'बच्चों के मन में बस जाने वाली कहानियाँ',
+            desc: 'नन्हे दर्शकों और परिवारों के लिए धैर्य, ईमानदारी, साझा करने और दयालुता पर आधारित मधुर हिंदी एनिमेटेड कहानियाँ।',
+            moral: '“सच्ची दोस्ती और ईमानदारी हर मुश्किल को आसान बना देती है।”'
+          },
+          comedy: {
+            badge: 'छोटी कार्टून कॉमेडी',
+            title: 'भावपूर्ण और हल्की-फुल्की मस्ती',
+            desc: 'चेहरे के सुंदर भावों और मज़ेदार पलों से भरी कहानियाँ जो पूरे परिवार के चेहरे पर मुस्कान लाती हैं।',
+            moral: 'हँसी और तालमेल रोज़मर्रा की उलझनों को भी खुशनुमा यादों में बदल देते हैं।'
+          },
+          bilingual: {
+            badge: 'द्विभाषी परिवार अनुकूल सामग्री',
+            title: 'हिंदी ऑडियो + अंग्रेज़ी शीर्षक और कैप्शन',
+            desc: 'भारत और विदेश के उन परिवारों के लिए तैयार जो हिंदी कहानियों के साथ आसान अंग्रेज़ी शीर्षक और कैप्शन पसंद करते हैं।',
+            moral: 'दो भाषाओं से जुड़ना कहानियों और कल्पना की नई दुनिया खोलता है।'
+          },
+          guide: {
+            badge: 'Jumbiko Studio चैनल गाइड',
+            title: '@jumbikostudio में आपका स्वागत है',
+            desc: 'इंटरैक्टिव लैब में मोरल व्हील और अगला एपिसोड पोल आज़माएँ, परिवार के लिए चुने गए सुझाव देखें, या jumbikostudio@gmail.com पर कहानी के विचार भेजें।',
+            moral: 'नई हिंदी एनिमेटेड कहानियों और पारिवारिक एपिसोड्स के लिए YouTube पर सब्सक्राइब करें।'
+          }
         }
       };
 
-      function openModal(key) {
-        const info = storyDetails[key] || storyDetails.guide;
-        if (!storyModal) return;
+      function renderModalContent(key) {
+        const langPack = storyDetails[currentLang] || storyDetails.en;
+        const info = langPack[key] || langPack.guide;
         if (modalBadge) modalBadge.textContent = info.badge;
         if (modalTitle) modalTitle.textContent = info.title;
         if (modalDesc) modalDesc.textContent = info.desc;
         if (modalMoral) modalMoral.textContent = info.moral;
+        if (modalMoralHeading) {
+          modalMoralHeading.textContent = currentLang === 'hi' ? '🌟 मुख्य सीख / खास बात' : '🌟 Key Highlight / Lesson';
+        }
+        if (modalYtCta) {
+          modalYtCta.textContent = currentLang === 'hi' ? 'Jumbiko Studio YouTube पर देखें ↗' : 'Watch on Jumbiko YouTube ↗';
+        }
+      }
+
+      function openModal(key) {
+        currentModalKey = key || 'guide';
+        renderModalContent(currentModalKey);
+        if (!storyModal) return;
         storyModal.classList.remove('hidden');
         storyModal.classList.add('flex');
       }
@@ -1267,7 +1303,11 @@
             localStorage.setItem('jumbiko_user_reactions', JSON.stringify(userReactions));
           } catch (_) {}
           renderReactions(key);
-          showToast('💛', userReactions[key] ? 'Thanks for your reaction!' : 'Reaction updated');
+          if (currentLang === 'hi') {
+            showToast('💛', userReactions[key] ? 'आपकी प्रतिक्रिया के लिए धन्यवाद!' : 'प्रतिक्रिया अपडेट हो गई');
+          } else {
+            showToast('💛', userReactions[key] ? 'Thanks for your reaction!' : 'Reaction updated');
+          }
         });
       });
       renderReactions();
@@ -1389,7 +1429,7 @@
           isSpinningWheel = false;
           wheelSpinTimeout = null;
           applyMoralAtIndex(moralIdx);
-          showToast('🌟', 'New story moral unlocked!');
+          showToast('🌟', currentLang === 'hi' ? 'नई कहानी की सीख मिली!' : 'New story moral unlocked!');
         }, 1100);
       }
 
@@ -1412,6 +1452,13 @@
       const barForestEl = document.getElementById('poll-bar-forest');
       const pollStatusEl = document.getElementById('poll-status');
 
+      function getPollOptionLabel(choice) {
+        if (choice === 'forest') {
+          return currentLang === 'hi' ? 'The Magical Forest (जादुई जंगल)' : 'The Magical Forest';
+        }
+        return currentLang === 'hi' ? "Chotu's Big Adventure (छोटू का बड़ा एडवेंचर)" : "Chotu's Big Adventure";
+      }
+
       function renderPollUI(showThanks = false) {
         const total = Math.max(1, (pollVotes.chotu || 0) + (pollVotes.forest || 0));
         const chotuPct = Math.round(((pollVotes.chotu || 0) / total) * 100);
@@ -1431,8 +1478,10 @@
         });
 
         if (pollStatusEl && showThanks && selectedPoll) {
-          const label = selectedPoll === 'chotu' ? "Chotu's Big Adventure" : 'The Magical Forest';
-          pollStatusEl.textContent = `Voted for "${label}"!`;
+          const label = getPollOptionLabel(selectedPoll);
+          pollStatusEl.textContent = currentLang === 'hi'
+            ? `"${label}" के लिए वोट दर्ज हो गया!`
+            : `Voted for "${label}"!`;
         }
       }
 
@@ -1448,7 +1497,7 @@
             } catch (_) {}
           }
           renderPollUI(true);
-          showToast('🗳️', 'Episode vote recorded!');
+          showToast('🗳️', currentLang === 'hi' ? 'एपिसोड वोट दर्ज हो गया!' : 'Episode vote recorded!');
         });
       });
       renderPollUI(false);
@@ -1480,7 +1529,11 @@
             card.classList.toggle('hidden', !showCard);
           });
 
-          showToast('🎁', selectedAge === 'all' ? 'Showing all family picks' : `Filtered by ${btn.textContent.trim()}`);
+          if (currentLang === 'hi') {
+            showToast('🎁', selectedAge === 'all' ? 'सभी पारिवारिक विकल्प दिख रहे हैं' : `${btn.textContent.trim()} के अनुसार फ़िल्टर किया गया`);
+          } else {
+            showToast('🎁', selectedAge === 'all' ? 'Showing all family picks' : `Filtered by ${btn.textContent.trim()}`);
+          }
         });
       });
 
@@ -1521,15 +1574,15 @@
           const tagText = affiliateTagCode.textContent.trim();
           copyTextReliable(
             tagText,
-            () => showToast('📋', `Copied ${tagText} to clipboard`),
-            () => showToast('🏷️', `Associate tag: ${tagText}`)
+            () => showToast('📋', currentLang === 'hi' ? `${tagText} कॉपी हो गया` : `Copied ${tagText} to clipboard`),
+            () => showToast('🏷️', `${tagText}`)
           );
         });
       }
 
       document.querySelectorAll('.mailto-toast-trigger, a[href^="mailto:"]').forEach(link => {
         link.addEventListener('click', () => {
-          showToast('✉️', `Opening mail client for ${STUDIO_EMAIL}`);
+          showToast('✉️', currentLang === 'hi' ? `${STUDIO_EMAIL} के लिए मेल ऐप खुल रहा है` : `Opening mail client for ${STUDIO_EMAIL}`);
         });
       });
 
@@ -1582,25 +1635,86 @@
           react_funny: 'Funny',
           react_moral: 'Great Moral',
           more_playlists: 'More full playlists on YouTube',
+          open_channel: 'Open Channel ↗',
           create_title: 'What We Create',
+          pillars_badge: '3 Pillars',
+          pillar1_title: 'Hindi Moral & Bedtime Stories',
+          pillar1_desc: 'Engaging animated tales with meaningful lessons for kids and families.',
+          pillar2_title: 'Short Cartoon Comedy',
+          pillar2_desc: 'Bite-sized, expressive visual stories crafted for quick entertainment.',
+          pillar3_title: 'Bilingual Friendly Content',
+          pillar3_desc: 'Hindi audio paired with English titles and captions for global Indian families.',
           card_tap_hint: '✨ Tap any card to explore story highlights & morals',
           lab_badge: 'Jumbiko Interactive Lab',
           lab_heading: 'Interactive Studio Activities',
           tab_moral_wheel: 'Moral Wheel',
           tab_episode_poll: 'Next Episode Poll',
+          wheel_spin_label: 'SPIN',
+          spin_btn: 'Spin Moral Wheel',
           moral_desc: 'Tap the golden wheel for today’s Hindi & English bedtime lesson!',
           moral_label: 'Today’s Story Moral',
           poll_title: 'Next Episode Poll',
           poll_subtitle: 'Vote which animated story adventure Jumbiko Studio should feature next!',
+          poll_opt_chotu: "Chotu's Big Adventure",
+          poll_opt_forest: 'The Magical Forest',
           poll_prompt: 'Tap an adventure above to cast your vote!',
           picks_badge: 'Curated Off-Screen Fun',
           picks_title: 'Recommended Family & Kids Picks',
+          picks_desc: 'Looking for illustrated Hindi storybooks, coloring kits, and creative activity sets featured in our stories? Check our latest video descriptions on YouTube (@jumbikostudio) for curated recommendations.',
+          age_all: 'All',
+          age_2_5: 'Ages 2–5',
+          age_6_10: 'Ages 6–10',
+          pick1_title: 'Illustrated Hindi Storybooks',
+          pick1_desc: 'Colorful moral picture books with easy Hindi & English vocabulary for cozy bedtime reading.',
+          pick2_title: 'Beginner Coloring Kits',
+          pick2_desc: 'Jumbo non-toxic crayons and bold cartoon outline pads designed for little artists.',
+          pick3_title: 'Cartoon Sketch & Art Sets',
+          pick3_desc: 'Character drawing guides, watercolor palettes, and DIY craft packs inspired by our episodes.',
+          pick4_title: 'Creative Activity & Puzzle Sets',
+          pick4_desc: 'Screen-free moral story cards, bilingual word games, and brain-teasing family board puzzles.',
+          pick_links_cta: '@jumbikostudio Links',
+          tag_note_label: 'Amazon Associates Note:',
+          tag_note_prefix: 'Add your Associate tag',
+          tag_note_suffix: 'to curated Amazon.in & Amazon.com links in video descriptions.',
+          copy_tag_btn: 'Copy Tag Template',
           about_badge: 'Inside the Studio',
           about_title: 'About Jumbiko Studio',
+          about_p1: 'Jumbiko Studio (@jumbikostudio) crafts original Hindi animated stories, gentle bedtime fables, and expressive cartoon comedy designed for children and multi-generational families in India and across the globe.',
+          about_p2: 'Every episode blends warm Indian storytelling values—kindness, honesty, curiosity, and family togetherness—with approachable bilingual titles and captions so kids everywhere can enjoy and learn together.',
+          about_note: 'Affiliate & Editorial Note: Family & Kids Picks highlight illustrated Hindi books, art kits, and learning activities selected for parents and educators. Links may use Amazon Associates tracking tags to support studio production.',
+          stat1_title: 'Hindi + EN',
+          stat1_desc: 'Expressive Hindi stories with clear captions',
+          stat2_title: 'Family Safe',
+          stat2_desc: 'Positive morals & lighthearted comedy',
+          stat3_title: 'Global Reach',
+          stat3_desc: 'Made for viewers in India & worldwide',
           contact_badge: 'Connect With Us',
           contact_title: 'Contact Us',
           tab_send_message: 'Send Message',
-          tab_studio_faq: 'Studio Info & FAQ'
+          tab_studio_faq: 'Studio Info & FAQ',
+          contact_intro: 'Send story ideas, family feedback, or inquiries directly to',
+          copy_email_btn: 'Copy Email',
+          label_name: 'Your Name',
+          placeholder_name: 'e.g., Aarav Sharma',
+          label_email: 'Email Address',
+          label_message: 'Message or Story Suggestion',
+          placeholder_message: 'Share a bedtime story moral idea or inquiry...',
+          formsubmit_note: 'Sent via FormSubmit to jumbikostudio@gmail.com. (On the very first submission to a new inbox, check jumbikostudio@gmail.com and click FormSubmit’s activation link to confirm delivery.)',
+          send_to_prefix: 'Send to',
+          open_mail_app: 'Open Mail App',
+          faq1_q: 'How do we submit story or moral ideas?',
+          faq1_a: 'Use the Send Message tab to email jumbikostudio@gmail.com directly, or comment on @jumbikostudio.',
+          faq2_q: 'Are episodes suitable for kids & parents?',
+          faq2_a: 'Yes! All Jumbiko Studio animated stories focus on family-safe entertainment, moral lessons, and Hindi audio with English titles/captions.',
+          faq3_q: 'Where are recommended books & kits listed?',
+          faq3_a: 'Curated family & kids picks appear in the Family Picks section and in our YouTube video descriptions.',
+          email_label: 'Email',
+          yt_channel_link: 'YouTube Channel ↗',
+          copyright_text: '© 2026 Jumbiko Studio. All rights reserved.',
+          footer_email_studio: 'Email Studio ↗',
+          disclosure_label: 'Affiliate Disclosure:',
+          disclosure_body: 'Jumbiko Studio participates in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.in and Amazon.com.',
+          modal_play_featured: 'Play Featured Video'
         },
         hi: {
           nav_home: 'होम',
@@ -1610,53 +1724,134 @@
           nav_about: 'हमारे बारे में',
           nav_contact: 'संपर्क करें',
           nav_subscribe: 'सब्सक्राइब करें',
-          hero_tagline: 'भारत और दुनिया भर के परिवारों के लिए मौलिक हिंदी कार्टून कहानियाँ, नैतिक कथाएँ और मज़ेदार मनोरंजन।',
+          hero_tagline: 'भारत और दुनिया भर के दर्शकों के लिए मौलिक हिंदी कार्टून कहानियाँ, एनिमेटेड नैतिक कथाएँ और मज़ेदार पारिवारिक मनोरंजन।',
           pill_watch: 'फ़ीचर्ड कहानी देखें',
           pill_lab: 'इंटरैक्टिव लैब',
           pill_picks: 'परिवार पसंद',
-          featured_title: 'जुंबिको स्टूडियो की फ़ीचर्ड कहानी',
-          featured_desc: 'हमारी नवीनतम एनिमेटेड हिंदी कहानी यहाँ देखें या पूरी प्लेलिस्ट के लिए हमारा YouTube चैनल देखें।',
+          featured_title: 'Jumbiko Studio की फ़ीचर्ड कहानी',
+          featured_desc: 'हमारी नवीनतम एनिमेटेड हिंदी कहानी नीचे देखें या पूरी प्लेलिस्ट के लिए हमारा आधिकारिक YouTube चैनल देखें।',
           btn_guide: 'गाइड',
           react_love: 'पसंद आया',
           react_funny: 'मज़ेदार',
           react_moral: 'अच्छी सीख',
-          more_playlists: 'YouTube पर और प्लेलिस्ट देखें',
+          more_playlists: 'YouTube पर और पूरी प्लेलिस्ट देखें',
+          open_channel: 'चैनल खोलें ↗',
           create_title: 'हम क्या बनाते हैं',
+          pillars_badge: '3 मुख्य हिस्से',
+          pillar1_title: 'हिंदी नैतिक और सोने से पहले की कहानियाँ',
+          pillar1_desc: 'बच्चों और परिवारों के लिए सार्थक सीख देने वाली आकर्षक एनिमेटेड कहानियाँ।',
+          pillar2_title: 'छोटी कार्टून कॉमेडी',
+          pillar2_desc: 'तुरंत मनोरंजन के लिए बनी संक्षिप्त और भावपूर्ण दृश्य कहानियाँ।',
+          pillar3_title: 'द्विभाषी परिवार अनुकूल सामग्री',
+          pillar3_desc: 'दुनिया भर के भारतीय परिवारों के लिए अंग्रेज़ी शीर्षक और कैप्शन के साथ हिंदी ऑडियो।',
           card_tap_hint: '✨ कहानी की खास बातें और सीख जानने के लिए किसी भी कार्ड पर टैप करें',
-          lab_badge: 'जुंबिको इंटरैक्टिव लैब',
+          lab_badge: 'Jumbiko Studio इंटरैक्टिव लैब',
           lab_heading: 'इंटरैक्टिव स्टूडियो गतिविधियाँ',
           tab_moral_wheel: 'मोरल व्हील',
           tab_episode_poll: 'अगला एपिसोड पोल',
-          moral_desc: 'आज के हिंदी और अंग्रेज़ी सीख भरे संदेश के लिए सुनहरे चक्र पर टैप करें!',
+          wheel_spin_label: 'घुमाएँ',
+          spin_btn: 'मोरल व्हील घुमाएँ',
+          moral_desc: 'आज की हिंदी और अंग्रेज़ी सीख के लिए सुनहरे चक्र पर टैप करें!',
           moral_label: 'आज की कहानी की सीख',
           poll_title: 'अगला एपिसोड पोल',
-          poll_subtitle: 'वोट करें कि जुंबिको स्टूडियो अगली कहानी किस एडवेंचर पर बनाए!',
-          poll_prompt: 'अपना वोट देने के लिए ऊपर किसी विकल्प पर टैप करें!',
+          poll_subtitle: 'वोट दें कि Jumbiko Studio अगली एनिमेटेड कहानी किस एडवेंचर पर दिखाए!',
+          poll_opt_chotu: "Chotu's Big Adventure (छोटू का बड़ा एडवेंचर)",
+          poll_opt_forest: 'The Magical Forest (जादुई जंगल)',
+          poll_prompt: 'अपना वोट देने के लिए ऊपर किसी एडवेंचर पर टैप करें!',
           picks_badge: 'परिवार व बच्चों के लिए सुझाव',
           picks_title: 'परिवार और बच्चों के लिए अनुशंसित विकल्प',
-          about_badge: 'स्टूडियो के बारे में',
-          about_title: 'जुंबिको स्टूडियो के बारे में',
+          picks_desc: 'क्या आप हमारी कहानियों में दिखने वाली सचित्र हिंदी कहानी की किताबें, कलरिंग किट्स और क्रिएटिव एक्टिविटी सेट्स ढूँढ रहे हैं? सुझावों के लिए YouTube (@jumbikostudio) पर हमारे नवीनतम वीडियो विवरण देखें।',
+          age_all: 'सभी',
+          age_2_5: 'उम्र 2–5 वर्ष',
+          age_6_10: 'उम्र 6–10 वर्ष',
+          pick1_title: 'सचित्र हिंदी कहानी की किताबें',
+          pick1_desc: 'आरामदायक बेडटाइम रीडिंग के लिए आसान हिंदी और अंग्रेज़ी शब्दों वाली रंगीन नैतिक चित्र पुस्तकें।',
+          pick2_title: 'शुरुआती कलरिंग किट्स',
+          pick2_desc: 'नन्हे कलाकारों के लिए मोटे नॉन-टॉक्सिक क्रेयॉन और स्पष्ट कार्टून आउटलाइन पैड।',
+          pick3_title: 'कार्टून स्केच और आर्ट सेट्स',
+          pick3_desc: 'हमारे एपिसोड्स से प्रेरित कैरेक्टर ड्राइंग गाइड, वॉटरकलर पैलेट और DIY क्राफ्ट पैक।',
+          pick4_title: 'क्रिएटिव एक्टिविटी और पज़ल सेट्स',
+          pick4_desc: 'स्क्रीन-फ्री नैतिक कहानी कार्ड, द्विभाषी शब्द खेल और पारिवारिक बोर्ड पज़ल।',
+          pick_links_cta: '@jumbikostudio लिंक्स',
+          tag_note_label: 'Amazon Associates नोट:',
+          tag_note_prefix: 'वीडियो विवरण में चुनिंदा Amazon.in और Amazon.com लिंक्स के साथ अपना Associate टैग',
+          tag_note_suffix: 'जोड़ें।',
+          copy_tag_btn: 'टैग टेम्पलेट कॉपी करें',
+          about_badge: 'स्टूडियो के भीतर',
+          about_title: 'Jumbiko Studio के बारे में',
+          about_p1: 'Jumbiko Studio (@jumbikostudio) भारत और दुनिया भर के बच्चों तथा परिवारों के लिए मौलिक हिंदी एनिमेटेड कहानियाँ, कोमल बेडटाइम कथाएँ और भावपूर्ण कार्टून कॉमेडी बनाता है।',
+          about_p2: 'हर एपिसोड दयालुता, ईमानदारी, जिज्ञासा और पारिवारिक जुड़ाव जैसे भारतीय मूल्यों को आसान द्विभाषी शीर्षकों और कैप्शन के साथ जोड़ता है ताकि बच्चे मिलकर देख और सीख सकें।',
+          about_note: 'सहबद्ध और संपादकीय नोट: परिवार और बच्चों के विकल्प माता-पिता और शिक्षकों के लिए चुनी गई सचित्र हिंदी किताबों, आर्ट किट्स और सीखने की गतिविधियों को दिखाते हैं। स्टूडियो निर्माण में सहायता के लिए लिंक्स में Amazon Associates ट्रैकिंग टैग हो सकते हैं।',
+          stat1_title: 'हिंदी + अंग्रेज़ी',
+          stat1_desc: 'स्पष्ट कैप्शन के साथ भावपूर्ण हिंदी कहानियाँ',
+          stat2_title: 'परिवार के लिए सुरक्षित',
+          stat2_desc: 'सकारात्मक सीख और हल्की-फुल्की कॉमेडी',
+          stat3_title: 'वैश्विक पहुँच',
+          stat3_desc: 'भारत और दुनिया भर के दर्शकों के लिए',
           contact_badge: 'हमसे जुड़ें',
           contact_title: 'संपर्क करें',
           tab_send_message: 'संदेश भेजें',
-          tab_studio_faq: 'स्टूडियो जानकारी व FAQ'
+          tab_studio_faq: 'स्टूडियो जानकारी और FAQ',
+          contact_intro: 'कहानी के विचार, पारिवारिक प्रतिक्रिया या पूछताछ सीधे भेजें',
+          copy_email_btn: 'ईमेल कॉपी करें',
+          label_name: 'आपका नाम',
+          placeholder_name: 'जैसे, आरव शर्मा',
+          label_email: 'ईमेल पता',
+          label_message: 'संदेश या कहानी का सुझाव',
+          placeholder_message: 'बेडटाइम कहानी की सीख का विचार या संदेश लिखें...',
+          formsubmit_note: 'FormSubmit के माध्यम से jumbikostudio@gmail.com पर भेजा जाता है। (किसी नए इनबॉक्स में पहली बार भेजने पर jumbikostudio@gmail.com जाँचें और डिलीवरी पुष्टि करने के लिए FormSubmit के एक्टिवेशन लिंक पर क्लिक करें।)',
+          send_to_prefix: 'भेजें',
+          open_mail_app: 'मेल ऐप खोलें',
+          faq1_q: 'कहानी या नैतिक सीख के विचार कैसे भेजें?',
+          faq1_a: 'सीधे jumbikostudio@gmail.com पर ईमेल करने के लिए संदेश भेजें टैब का उपयोग करें, या @jumbikostudio पर कमेंट करें।',
+          faq2_q: 'क्या एपिसोड बच्चों और माता-पिता के लिए उपयुक्त हैं?',
+          faq2_a: 'हाँ! Jumbiko Studio की सभी एनिमेटेड कहानियाँ परिवार के लिए सुरक्षित मनोरंजन, नैतिक सीख और अंग्रेज़ी शीर्षक/कैप्शन के साथ हिंदी ऑडियो पर केंद्रित हैं।',
+          faq3_q: 'सुझाई गई किताबें और किट्स कहाँ सूचीबद्ध हैं?',
+          faq3_a: 'परिवार और बच्चों के लिए चुने गए विकल्प परिवार पसंद अनुभाग और हमारे YouTube वीडियो विवरण में मिलते हैं।',
+          email_label: 'ईमेल',
+          yt_channel_link: 'YouTube चैनल ↗',
+          copyright_text: '© 2026 Jumbiko Studio. सर्वाधिकार सुरक्षित।',
+          footer_email_studio: 'स्टूडियो को ईमेल करें ↗',
+          disclosure_label: 'सहबद्ध प्रकटीकरण (Affiliate Disclosure):',
+          disclosure_body: 'Jumbiko Studio, Amazon Associates Program में भाग लेता है, जो एक सहबद्ध विज्ञापन कार्यक्रम है जिसे साइटों को Amazon.in और Amazon.com पर विज्ञापन और लिंक देकर विज्ञापन शुल्क अर्जित करने का माध्यम प्रदान करने के लिए डिज़ाइन किया गया है।',
+          modal_play_featured: 'फ़ीचर्ड वीडियो चलाएँ'
         }
       };
 
-      let currentLang = 'en';
       const langToggleBtn = document.getElementById('lang-toggle');
       const langEnBadge = document.getElementById('lang-en');
       const langHiBadge = document.getElementById('lang-hi');
 
       function applyLanguageUI(lang) {
         currentLang = lang === 'hi' ? 'hi' : 'en';
+        document.documentElement.lang = currentLang;
         const dict = translations[currentLang];
+
         document.querySelectorAll('[data-i18n]').forEach(el => {
           const key = el.getAttribute('data-i18n');
           if (key && dict[key]) {
             el.textContent = dict[key];
           }
         });
+
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+          const key = el.getAttribute('data-i18n-placeholder');
+          if (key && dict[key]) {
+            el.setAttribute('placeholder', dict[key]);
+          }
+        });
+
+        syncTheaterButtonText();
+        renderPollUI(Boolean(selectedPoll && pollStatusEl && pollStatusEl.textContent && !pollStatusEl.textContent.includes('Tap an adventure') && !pollStatusEl.textContent.includes('अपना वोट देने')));
+        if (storyModal && !storyModal.classList.contains('hidden')) {
+          renderModalContent(currentModalKey);
+        }
+
+        if (contactSubmitBtn && !contactSubmitBtn.disabled) {
+          const prefix = dict.send_to_prefix || 'Send to';
+          contactSubmitBtn.textContent = `${prefix} ${STUDIO_EMAIL} ✉`;
+        }
+
         if (langToggleBtn) {
           langToggleBtn.setAttribute('aria-pressed', String(currentLang === 'hi'));
         }
@@ -1675,15 +1870,13 @@
         langToggleBtn.addEventListener('click', () => {
           const nextLang = currentLang === 'en' ? 'hi' : 'en';
           applyLanguageUI(nextLang);
-          showToast('🌐', nextLang === 'hi' ? 'भाषा: हिंदी (हिन्दी)' : 'Language: English (EN)');
+          showToast('🌐', nextLang === 'hi' ? 'भाषा: हिंदी (ब्रांड नाम और ईमेल अंग्रेज़ी में)' : 'Language: English (EN)');
         });
       }
 
       /* ---------------------------------------------------------
        * 7. Contact Us Real Email Delivery to jumbikostudio@gmail.com
        * --------------------------------------------------------- */
-      const STUDIO_EMAIL = 'jumbikostudio@gmail.com';
-      const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${STUDIO_EMAIL}`;
       const contactForm = document.getElementById('contact-form');
       const contactSubmitBtn = document.getElementById('contact-submit-btn');
       const contactFeedback = document.getElementById('contact-feedback');
@@ -1702,8 +1895,8 @@
         copyStudioEmailBtn.addEventListener('click', () => {
           copyTextReliable(
             STUDIO_EMAIL,
-            () => showToast('📋', `Copied ${STUDIO_EMAIL} to clipboard!`),
-            () => showToast('✉️', `Studio email: ${STUDIO_EMAIL}`)
+            () => showToast('📋', currentLang === 'hi' ? `${STUDIO_EMAIL} कॉपी हो गया!` : `Copied ${STUDIO_EMAIL} to clipboard!`),
+            () => showToast('✉️', `${STUDIO_EMAIL}`)
           );
         });
       }
@@ -1719,15 +1912,19 @@
           const msgVal = msgInput ? msgInput.value.trim() : '';
 
           if (!nameVal || !emailVal || !msgVal) {
-            const msg = `Please fill in your name, email, and message before sending to ${STUDIO_EMAIL}.`;
+            const msg = currentLang === 'hi'
+              ? `${STUDIO_EMAIL} पर भेजने से पहले कृपया नाम, ईमेल और संदेश भरें।`
+              : `Please fill in your name, email, and message before sending to ${STUDIO_EMAIL}.`;
             if (contactFeedback) contactFeedback.textContent = msg;
-            showToast('⚠️', 'Please complete all contact fields');
+            showToast('⚠️', currentLang === 'hi' ? 'कृपया सभी फ़ील्ड भरें' : 'Please complete all contact fields');
             return;
           }
           if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
-            const msg = 'Please enter a valid reply email address.';
+            const msg = currentLang === 'hi'
+              ? 'कृपया एक मान्य ईमेल पता दर्ज करें।'
+              : 'Please enter a valid reply email address.';
             if (contactFeedback) contactFeedback.textContent = msg;
-            showToast('⚠️', 'Enter a valid email address');
+            showToast('⚠️', currentLang === 'hi' ? 'मान्य ईमेल पता दर्ज करें' : 'Enter a valid email address');
             return;
           }
 
@@ -1738,12 +1935,14 @@
 
           if (contactSubmitBtn) {
             contactSubmitBtn.disabled = true;
-            contactSubmitBtn.textContent = 'Sending...';
+            contactSubmitBtn.textContent = currentLang === 'hi' ? 'भेजा जा रहा है...' : 'Sending...';
           }
           if (contactFeedback) {
-            contactFeedback.textContent = `Sending your message to ${STUDIO_EMAIL}...`;
+            contactFeedback.textContent = currentLang === 'hi'
+              ? `${STUDIO_EMAIL} पर संदेश भेजा जा रहा है...`
+              : `Sending your message to ${STUDIO_EMAIL}...`;
           }
-          showToast('📤', `Sending message to ${STUDIO_EMAIL}...`);
+          showToast('📤', currentLang === 'hi' ? `${STUDIO_EMAIL} पर संदेश भेजा जा रहा है...` : `Sending message to ${STUDIO_EMAIL}...`);
 
           try {
             const response = await fetch(FORMSUBMIT_ENDPOINT, {
@@ -1765,26 +1964,35 @@
 
             if (response.ok && (data.success === 'true' || data.success === true || !('success' in data))) {
               if (contactFeedback) {
-                contactFeedback.innerHTML = `✅ Sent to <strong class="text-amber-200">${STUDIO_EMAIL}</strong>! (If this is your very first message to this address, check <strong class="text-amber-200">${STUDIO_EMAIL}</strong> and click FormSubmit’s confirmation link to activate future emails.)`;
+                contactFeedback.innerHTML = currentLang === 'hi'
+                  ? `✅ <strong class="text-amber-200">${STUDIO_EMAIL}</strong> पर भेजा गया! (यदि यह इस पते पर पहला संदेश है, तो <strong class="text-amber-200">${STUDIO_EMAIL}</strong> जाँचें और FormSubmit का पुष्टिकरण लिंक क्लिक करें।)`
+                  : `✅ Sent to <strong class="text-amber-200">${STUDIO_EMAIL}</strong>! (If this is your very first message to this address, check <strong class="text-amber-200">${STUDIO_EMAIL}</strong> and click FormSubmit’s confirmation link to activate future emails.)`;
               }
-              showToast('✅', `Sent successfully to ${STUDIO_EMAIL}!`);
+              showToast('✅', currentLang === 'hi' ? `${STUDIO_EMAIL} पर भेजा गया!` : `Sent successfully to ${STUDIO_EMAIL}!`);
               contactForm.reset();
             } else {
-              const errMsg = data.message || `Could not complete automatic send to ${STUDIO_EMAIL}.`;
+              const errMsg = data.message || (currentLang === 'hi'
+                ? `${STUDIO_EMAIL} पर स्वतः भेजना पूरा नहीं हो सका।`
+                : `Could not complete automatic send to ${STUDIO_EMAIL}.`);
               if (contactFeedback) {
-                contactFeedback.innerHTML = `${errMsg} You can also <a href="${mailtoHref}" class="underline font-bold text-amber-300">open your mail app</a> to send directly to ${STUDIO_EMAIL}.`;
+                contactFeedback.innerHTML = currentLang === 'hi'
+                  ? `${errMsg} आप <a href="${mailtoHref}" class="underline font-bold text-amber-300">मेल ऐप खोलकर</a> सीधे ${STUDIO_EMAIL} पर भी भेज सकते हैं।`
+                  : `${errMsg} You can also <a href="${mailtoHref}" class="underline font-bold text-amber-300">open your mail app</a> to send directly to ${STUDIO_EMAIL}.`;
               }
-              showToast('❌', `Delivery issue—use Mail App for ${STUDIO_EMAIL}`);
+              showToast('❌', currentLang === 'hi' ? `मेल ऐप का उपयोग करें (${STUDIO_EMAIL})` : `Delivery issue—use Mail App for ${STUDIO_EMAIL}`);
             }
           } catch (err) {
             if (contactFeedback) {
-              contactFeedback.innerHTML = `Network or browser blocked background sending. <a href="${mailtoHref}" class="underline font-bold text-amber-300">Click here to open your mail app</a> addressed to <strong class="text-amber-200">${STUDIO_EMAIL}</strong>.`;
+              contactFeedback.innerHTML = currentLang === 'hi'
+                ? `नेटवर्क या ब्राउज़र ने बैकग्राउंड भेजना रोका। <a href="${mailtoHref}" class="underline font-bold text-amber-300">मेल ऐप खोलने के लिए यहाँ क्लिक करें</a> (<strong class="text-amber-200">${STUDIO_EMAIL}</strong>)।`
+                : `Network or browser blocked background sending. <a href="${mailtoHref}" class="underline font-bold text-amber-300">Click here to open your mail app</a> addressed to <strong class="text-amber-200">${STUDIO_EMAIL}</strong>.`;
             }
-            showToast('✉️', `Background send blocked—open Mail App for ${STUDIO_EMAIL}`);
+            showToast('✉️', currentLang === 'hi' ? `मेल ऐप खोलें (${STUDIO_EMAIL})` : `Background send blocked—open Mail App for ${STUDIO_EMAIL}`);
           } finally {
             if (contactSubmitBtn) {
               contactSubmitBtn.disabled = false;
-              contactSubmitBtn.textContent = `Send to ${STUDIO_EMAIL} ✉`;
+              const prefix = (translations[currentLang] && translations[currentLang].send_to_prefix) || 'Send to';
+              contactSubmitBtn.textContent = `${prefix} ${STUDIO_EMAIL} ✉`;
             }
           }
         });
